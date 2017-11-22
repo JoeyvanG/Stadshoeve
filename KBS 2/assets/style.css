@@ -1,0 +1,86 @@
+body{
+    background-color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 15px; 
+    color: black;
+}
+
+.titel{
+    color: #5887c9;
+}
+.navbar{
+    margin: 0;
+}
+.navbar-nav{
+    margin:0 -15px;
+}
+.navbar-nav > li > a{
+    font-size: 1em;
+    line-height: 4.26em;
+    padding: 10px 0 10px 30px;
+    color: #5887c9;
+}
+.navbar-default{
+    border:none;
+    background: white;
+}
+.navbar-brand{
+    height: 83px;
+}
+
+#footer{
+    background-image: url(//cdn.parkdestadshoeve.nl/templates/parkdestadshoeve/img/gras.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+}
+
+#subfooter_tekst{
+    text-align:center;
+    padding-top:150px;
+    padding-bottom:30px;
+    color:#fff;
+    font-size:12px
+}
+#subfooter_tekst a{
+    color:#fff
+}
+
+#container_subfooter_overlay{
+    position:absolute;
+    width:100%;
+    height:110px;
+    background-image:url(//www.parkdestadshoeve.nl/templates/parkdestadshoeve/img/gras_overlay.svg);
+    background-repeat:repeat-x;
+}
+
+
+@media (max-width: 991px){
+}
+@media (max-width: 767px){	
+	.navbar-toggle{margin-top: 23px;}
+    .navbar-default .navbar-toggle{background-color: #04B404;}
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{background-color: #0B6121;}
+    .navbar-default .navbar-toggle .icon-bar {background-color: #fff;}
+    .navbar-nav > li > a{line-height: 1em;}
+
+    h1 {font-size: 2em;}
+    .banner p {font: 300 1em/1em 'Old Standard TT', serif;}
+    .banner .arrow-nav{margin-left: -22px;height: 3em;width: 3em;bottom: -1.5em;}
+    .banner .arrow-nav i {font-size: 2em;line-height: 45px;}
+
+    .spacer {padding: 4em 0;}
+
+    .reserve-info h3{margin-top: 2em;}
+
+    .services div.col-sm-4{margin-bottom: 2em;}
+
+    footer.spacer{padding:1em 0 3em 0 ;}
+    footer h4{margin-top: 2em;}
+
+    .room-features .size-price{margin-bottom: 2em;}
+}
+
+
