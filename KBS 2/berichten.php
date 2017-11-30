@@ -17,13 +17,13 @@ and open the template in the editor.
             <div class="berichten">
                 <!-- Hier kan je een bericht plaatsen -->
                 <form method="post" href="Template.php">
-<<<<<<< HEAD
+
                     <textarea rows="5" cols="140" name="bericht"></textarea>Bericht <br>
                     <input type="submit" name="plaatsen" value="Plaats bericht"><br>
-=======
+
                     <input type="text" name="bericht"><br>
                     <input type="submit" name="plaatsen" value="Plaat bericht"><br>
->>>>>>> 8f530c5ca6c80ad87a38c8ef430260234b85bd48
+
                 </form>
                 <!-- Hier worden de berichten van andere vrijwilligers opgehaald -->
                 <from method="post" href="mededelingen.php">
