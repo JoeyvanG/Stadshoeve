@@ -16,6 +16,15 @@ and open the template in the editor.
     <body>
         <div class="container">
             <h1 class="titel">Titel</h1>
+            <!--
+            Hier maken wij van ons berichtenveld een object dmv een div
+            -->
+            <div class="berichten">
+                <form method="post" href="Template.php">
+                    <input type="text" name="bericht"><br>
+                    <input type="submit" name="plaatsen" value="Plaats bericht"><br>
+                </form>
+            </div>
         </div>
     </body>
 </html>
