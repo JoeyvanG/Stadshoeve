@@ -83,4 +83,35 @@ body{
     .room-features .size-price{margin-bottom: 2em;}
 }
 
+.Foto_gebruiker {
+    height: 100px;
+    width: 100px;
+}
 
+.welkom {
+    padding-left: 10px;
+}
+
+.gegevens {
+    position: absolute;
+    top 0px;
+    left: 500px;
+}
+
+.berichten_icoon{
+    height: 50p;
+    width: 75px;
+}
+
+.persoonlijke_berichten {
+    position: absolute;
+    top: 400px;
+    right: 250px;
+}
+
+.berichten {
+    position: absolute;
+    top: 450px;
+    left: 800px;
+    right: 500px;
+}
