@@ -22,7 +22,7 @@ and open the template in the editor.
             <div class="berichten">
                 <form method="post" href="Template.php">
                     <input type="text" name="bericht"><br>
-                    <input type="submit" name="plaatsen" value="Plaats bericht"><br>
+                    <input type="submit" name="plaatsen" value="Plaat bericht"><br>
                 </form>
             </div>
         </div>
