@@ -1,7 +1,3 @@
-<?php
-    include 'header.php';
-    
-?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -15,20 +11,21 @@ and open the template in the editor.
     </head>
     <body>
         <div class="container">
-            <h1 class="titel">Titel</h1>
             <!--
             Hier maken wij van ons berichtenveld een object dmv een div
             -->
             <div class="berichten">
+                <!-- Hier kan je een bericht plaatsen -->
                 <form method="post" href="Template.php">
-                    <input type="text" name="bericht"><br>
+                    <textarea rows="5" cols="140" name="bericht"></textarea>Bericht <br>
                     <input type="submit" name="plaatsen" value="Plaats bericht"><br>
                 </form>
+                <!-- Hier worden de berichten van andere vrijwilligers opgehaald -->
+                <from method="post" href="mededelingen.php">
+                    <img src='<?php print('funtction AfbeeldingUser()')?>' alt="Kan afbeelding niet laten" >
+                    <textarea rows="5" cols="140" name="mededeling">Mededeling</textarea>
+                </from>
             </div>
         </div>
     </body>
 </html>
-<?php
-
-    include 'footer.php';
-?>
