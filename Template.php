@@ -1,6 +1,6 @@
 <?php
     include 'header.php';
-    
+
 ?>
 <!DOCTYPE html>
 <!--
@@ -16,6 +16,9 @@ and open the template in the editor.
     <body>
         <div class="container">
             <h1 class="titel">Titel</h1>
+            <iframe src="berichten.php">
+                <p>Kan berichten niet laden.</p>
+            </iframe>
         </div>
     </body>
 </html>
