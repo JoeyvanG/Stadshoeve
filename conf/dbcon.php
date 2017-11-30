@@ -32,4 +32,7 @@
                 $connectie = NULL;
     }
 
+    function haalBerichtOp(){
+
+    }
 ?>
