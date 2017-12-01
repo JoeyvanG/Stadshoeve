@@ -33,6 +33,6 @@
     }
 
     function haalBerichtOp(){
-
+        $stmt= $connectie-> prepare("Select m.bericht, g.voornaam, g.tussenvoegsel, g.achternaam, g.foto FROM mededeling m JOIN gebruiker g ON m.persoon_id= g.persoon_id ORDER BY m.datum DESC, m.tijd DESC;")
     }
 ?>
