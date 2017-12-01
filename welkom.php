@@ -1,6 +1,6 @@
 <?php
     include 'header.php';
-    
+
 ?>
 <!DOCTYPE html>
 <!--
@@ -19,7 +19,7 @@ and open the template in the editor.
             Dit is het welkoms bericht
             -->
             <div class="welkom">
-                <h2>Welkom <?php$naam_vrijwilliger?></h2><br>
+                <h2>Welkom <?php naam_persoon() ?></h2><br>
                 <img class="Foto_gebruiker" src="Anonynmous.png" alt="User">
                 <div class="gegevens">
                     <ul>
@@ -27,18 +27,6 @@ and open the template in the editor.
                         <li><?php $email_vrijwilliger ?></li>
                     </ul>
                 </div>
-            </div>
-            <!--
-            Hier kan de vrijwilliger zijn persoonlijke bericten zien
-            -->
-            <div class="persoonlijke_berichten">
-                <h3>Persoonlijke berichten</h3><br>
-                <img class="berichten_icoon" src="berichten_icoon.png">
-                <ul>
-                    <li><?php haalBerichtOp() ?></li>
-                </ul>
-
-
             </div>
             <!--
             Hier maken wij van ons berichtenveld een object dmv een div

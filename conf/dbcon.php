@@ -1,7 +1,7 @@
 <?php
-    $db ="mysql:host=localhost;dbname=kbs;port=8889";
+    $db ="mysql:host=localhost;dbname=stadshoeve;port=3306";
     $user = "root";
-    $pass = "root";
+    $pass = "";
     $connectie = new PDO($db, $user, $pass);
     
     function gebruikersbeheer($connectie){
@@ -31,8 +31,8 @@
                 }
                 $connectie = NULL;
     }
-
-    function haalBerichtOp(){
-
+    function naam_persoon($connectie){
+        $stmt = $connectie->prepare('SELECT voornaam FROM gebruiker WHERE persoon_id = 1');
+        $stmt->execute;
     }
-?>
+  ?>
