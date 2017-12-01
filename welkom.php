@@ -19,22 +19,14 @@ and open the template in the editor.
             Dit is het welkoms bericht
             -->
             <div class="welkom">
-                <h2>Welkom</h2><br>
+                <h2>Welkom (naam gebruiker)</h2><br>
                 <img class="Foto_gebruiker" src="Anonynmous.png" alt="User">
-                <div class="gegevens">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
             </div>
             <!--
             Hier maken wij van ons berichtenveld een object dmv een div
             -->
             <div class="berichten">
-                <iframe src="welkom.php">
-                    <p>De berichten kunnen niet worden geladen.</p>
-                </iframe>
+                <?php include 'berichten.php' ?>
             </div>
         </div>
     </body>
