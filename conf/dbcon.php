@@ -1,7 +1,7 @@
 <?php
-    $db ="mysql:host=localhost;dbname=kbs;port=8889";
+    $db ="mysql:host=localhost;dbname=stadshoeve;port=3306";
     $user = "root";
-    $pass = "root";
+    $pass = "";
     $connectie = new PDO($db, $user, $pass);
     
     function gebruikersbeheer($connectie){
@@ -38,14 +38,20 @@
         $stmt->execute();
 
         while($row= $stmt->fetch()){
-            $userFoto= $row["g.foto"];
-            $voornaam= $row["g.voornaam"];
-            $tussenvoegsel= $row["g.tussenvoegsel"];
-            $achternaam= $row["g.achternaam"];
-            $bericht= $row["m.bericht"];
+            $userFoto= $row["foto"];
+            $voornaam= $row["voornaam"];
+            $tussenvoegsel= $row["tussenvoegsel"];
+            $achternaam= $row["achternaam"];
+            $bericht= $row["bericht"];
 
-            print($userFoto);
+            print("<div class='gebruiker'>
+                $userFoto $voornaam $tussenvoegsel $achternaam
+             </div>");
+            print("<div class='mededeling'>
+                $bericht
+                </div>");
         }
+        $connectie= NULL;
     }
 
 ?>

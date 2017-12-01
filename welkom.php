@@ -1,6 +1,6 @@
 <?php
     include 'header.php';
-    
+    include 'conf\dbcon.php';
 ?>
 <!DOCTYPE html>
 <!--
@@ -29,24 +29,33 @@ and open the template in the editor.
                 </div>
             </div>
             <!--
-            Hier kan de vrijwilliger zijn persoonlijke bericten zien
-            -->
-            <div class="persoonlijke_berichten">
-                <h3>Persoonlijke berichten</h3><br>
-                <img class="berichten_icoon" src="berichten_icoon.png">
-                <ul>
-                    <li><?php haalBerichtOp() ?></li>
-                </ul>
-
-
-            </div>
-            <!--
             Hier maken wij van ons berichtenveld een object dmv een div
             -->
             <div class="berichten">
-                <iframe src="welkom.php">
-                    <p>De berichten kunnen niet worden geladen.</p>
-                </iframe>
+                <!-- Hier kan je een bericht plaatsen -->
+                <!-- Buttons -->
+                <input type="button" name="bolt" value="B">
+                <input type="button" name="italic" value="I">
+                <input type="button" name="underlined" value="U">
+                <br>
+
+                <!-- Text area -->
+                <textarea class="text_edit" id="my_text"></textarea>
+                <br />
+
+                <!-- Submit button -->
+                <form>
+                    <input type="button" name="plaatsen bericht" value="Plaats bericht">
+                </form>
+
+                <!-- Hier worden de berichten van andere vrijwilligers opgehaald -->
+                <from method="post" href="mededelingen.php">
+                    <img src='<?php print('AfbeeldingUser()')?>' alt="Kan afbeelding niet laten" >
+                    <textarea rows="5" cols="140" name="mededeling">Mededeling</textarea>
+                </from>
+
+                <h2>Dit is een test stukje voor de db connectie</h2>
+                <?php  $mededeling= haalBerichtOp($connectie); ?>
             </div>
         </div>
     </body>
