@@ -111,7 +111,9 @@ body{
 
 .berichten {
     position: absolute;
-    top: 450px;
-    left: 800px;
-    right: 500px;
+    top: 0;
+    bottem: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
