@@ -19,12 +19,12 @@ and open the template in the editor.
             Dit is het welkoms bericht
             -->
             <div class="welkom">
-                <h2>Welkom <?php naam_persoon() ?></h2><br>
+                <h2>Welkom</h2><br>
                 <img class="Foto_gebruiker" src="Anonynmous.png" alt="User">
                 <div class="gegevens">
                     <ul>
-                        <li><?php $naam_vrijwilliger ?></li>
-                        <li><?php $email_vrijwilliger ?></li>
+                        <li></li>
+                        <li></li>
                     </ul>
                 </div>
             </div>

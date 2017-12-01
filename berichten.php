@@ -16,18 +16,24 @@ and open the template in the editor.
             -->
             <div class="berichten">
                 <!-- Hier kan je een bericht plaatsen -->
-                <form method="post" href="Template.php">
+                <!-- Buttons -->
+                <input type="button" name="bolt" value="B">
+                <input type="button" name="italic" value="I">
+                <input type="button" name="underlined" value="U">
+                <br>
 
-                    <textarea rows="5" cols="140" name="bericht"></textarea>Bericht <br>
-                    <input type="submit" name="plaatsen" value="Plaats bericht"><br>
+                <!-- Text area -->
+                <textarea class="text_edit" id="my_text"></textarea>
+                <br />
 
-                    <input type="text" name="bericht"><br>
-                    <input type="submit" name="plaatsen" value="Plaat bericht"><br>
-
+                <!-- Submit button -->
+                <form>
+                <input type="button" name="plaatsen bericht" value="Plaats bericht">
                 </form>
+
                 <!-- Hier worden de berichten van andere vrijwilligers opgehaald -->
                 <from method="post" href="mededelingen.php">
-                    <img src='<?php print('funtction AfbeeldingUser()')?>' alt="Kan afbeelding niet laten" >
+                    <img src='<?php print('AfbeeldingUser()')?>' alt="Kan afbeelding niet laten" >
                     <textarea rows="5" cols="140" name="mededeling">Mededeling</textarea>
                 </from>
             </div>
