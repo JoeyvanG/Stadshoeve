@@ -1,10 +1,8 @@
 <?php
     include 'header.php';
-<<<<<<< HEAD
-    include 'conf\dbcon.php';
-=======
 
->>>>>>> 006030735637dfa7255ff35b76012e696ee49415
+    include 'conf\dbcon.php';
+
 ?>
 <!DOCTYPE html>
 <!--
@@ -25,21 +23,20 @@ and open the template in the editor.
             <div class="welkom">
                 <h2>Welkom (naam gebruiker)</h2><br>
                 <img class="Foto_gebruiker" src="Anonynmous.png" alt="User">
-<<<<<<< HEAD
+
                 <div class="gegevens">
                     <ul>
                         <li><?php $naam_vrijwilliger ?></li>
                         <li><?php $email_vrijwilliger ?></li>
                     </ul>
                 </div>
-=======
->>>>>>> 006030735637dfa7255ff35b76012e696ee49415
+
             </div>
             <!--
             Hier maken wij van ons berichtenveld een object dmv een div
             -->
             <div class="berichten">
-<<<<<<< HEAD
+
                 <!-- Hier kan je een bericht plaatsen -->
                 <!-- Buttons -->
                 <input type="button" name="bolt" value="B">
@@ -64,9 +61,9 @@ and open the template in the editor.
 
                 <h2>Dit is een test stukje voor de db connectie</h2>
                 <?php  $mededeling= haalBerichtOp($connectie); ?>
-=======
+
                 <?php include 'berichten.php' ?>
->>>>>>> 006030735637dfa7255ff35b76012e696ee49415
+
             </div>
         </div>
     </body>
