@@ -1,28 +1,22 @@
 <?php
+    include 'conf/dbcon.php';
+    //check.php zorgt ervoor dat een gebruiker verplicht ingelogd moet zijn, anders wordt die verwezen naar de inlogpagina
+    include 'conf/check.php';
     include 'header.php';
 
+    //aanpassen naar de rollen die op deze pagina mogen komen. Dus als er meerdere rollen toegang hebben moet er || er tussen komen te staan.
+    if($_SESSION['user']['rol'] == "Administrator") {
+    
 ?>
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
+
         <div class="container">
-            <h1 class="titel">Titel</h1>
-            <iframe src="berichten.php">
-                <p>Kan berichten niet laden.</p>
-            </iframe>
+            <h1 class="titel"></h1>
         </div>
-    </body>
-</html>
+
 <?php
+    } else{
+        print("<script>window.location.href='geen_toegang.php'</script>");
+    }
 
     include 'footer.php';
 ?>

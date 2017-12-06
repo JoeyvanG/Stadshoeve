@@ -35,24 +35,92 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php"><img src="logo.png"  alt=""></a>
+      <a class="navbar-brand" href="index.php"><img src="img/logo.png" alt=""></a>
     </div>
 
 
     <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
       
-      <ul class="nav navbar-nav">        
-        <li><a href="">Menu1</a></li>
-        <li><a href="">Menu2</a></li>        
-        <li><a href="">Menu3</a></li>
-        <li><a href="">Menu4</a></li>
-        <li><a href="">Menu5</a></li>
+      <ul class="nav navbar-nav">
+          <?php
+            if($_SESSION['user']['rol'] == "Administrator"){
+                ?>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Educatieruimtes<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="template.php">Educatieruimte raadplegen</a></li>
+                        <li><a href="#">Educatieruimte reserveren</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Activiteiten</a></li>
+                <li><a href="">Smoelenboek</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Beheer<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="template.php">Activiteitenbeheer</a></li>
+                        <li><a href="gebruikersbeheer.php">Gebruikersbeheer</a></li>
+                        <li><a href="#">Ruimtesbeheer</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="conf/logout.php">Uitloggen</a></li>
+                <?php
+            }
+
+            if($_SESSION['user']['rol'] == "Supervisor"){
+                ?>
+                <li><a href="">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Educatieruimtes<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="template.php">Educatieruimte raadplegen</a></li>
+                        <li><a href="#">Educatieruimte reserveren</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Activiteiten</a></li>
+                <li><a href="">Smoelenboek</a></li>
+                <li><a href="conf/logout.php">Uitloggen</a></li>
+                <?php
+            }
+
+          if($_SESSION['user']['rol'] == "Klant"){
+              ?>
+              <li><a href="">Home</a></li>
+              <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Educatieruimtes<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="template.php">Educatieruimte raadplegen</a></li>
+                      <li><a href="#">Educatieruimte reserveren</a></li>
+                  </ul>
+              </li>
+              <li><a href="conf/logout.php">Uitloggen</a></li>
+              <?php
+          }
+
+          if($_SESSION['user']['rol'] == "Vrijwilliger"){
+              ?>
+              <li><a href="">Home</a></li>
+              <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Educatieruimtes<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="template.php">Educatieruimte raadplegen</a></li>
+                      <li><a href="#">Educatieruimte reserveren</a></li>
+                  </ul>
+              </li>
+              <li><a href="">Activiteiten</a></li>
+              <li><a href="">Smoelenboek</a></li>
+              <li><a href="conf/logout.php">Uitloggen</a></li>
+              <?php
+          }
+
+          ?>
       </ul>
     </div>
   </div>
 
   <div>	   
-    <img src="banner.png"  class="img-responsive" alt="slide">
+    <img src="img/banner.png" class="img-responsive" alt="slide">
   </div>
     
 
